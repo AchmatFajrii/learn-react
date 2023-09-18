@@ -13,15 +13,15 @@ const CardProduct = ({ children }) => {
 const Header = ({ image }) => {
   return (
     <>
-      <img className="rounded" src={image} alt="Gambar sepatu" />
+      <img className="rounded h-60 w-full" src={image} alt="Gambar sepatu" />
     </>
   );
 };
 
-const Body = ({ title, children }) => {
+const Body = ({ name, children }) => {
   return (
     <>
-      <h1 className="text-2xl font-bold text-white mt-2">{title}</h1>
+      <h1 className="text-2xl font-bold text-white mt-2">{name}</h1>
       <p className="text-sm font-normal text-white">{children}</p>
     </>
   );
