@@ -1,5 +1,5 @@
-
-const AuthLayout = ({title, children}) => {
+import { Link } from "react-router-dom";
+const AuthLayout = ({ title, children, type }) => {
   return (
     <>
       <div className="w-full max-w-xs ">
@@ -8,6 +8,22 @@ const AuthLayout = ({title, children}) => {
           Welcome please enter your details
         </p>
         {children}
+
+        {type === "login" ? (
+          <p className="text-center font-normal mt-4">
+            Don&apos;t have an account?{" "}
+            <Link className="text-blue-600 font-semibold" to="/register">
+              Register
+            </Link>
+          </p>
+        ) : (
+          <p className="text-center font-normal mt-4">
+            Have an account?{" "}
+            <Link className="text-blue-600 font-semibold" to="/login">
+              Login
+            </Link>
+          </p>
+        )}
       </div>
     </>
   );
