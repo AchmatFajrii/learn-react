@@ -17,7 +17,7 @@ const FormLogin = () => {
           name="Password"
           placeholder="******"
         />
-        <Button variant="bg-blue-600 w-full">Login</Button>
+        <Button variant="bg-blue-600 w-full text-white">Login</Button>
       </form>
     </>
   );
