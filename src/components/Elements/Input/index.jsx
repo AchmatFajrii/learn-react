@@ -6,7 +6,7 @@ const FormInput = ({htmlFor, type, placeholder, name}) => {
     <>
       <div className="mb-6">
         <Label htmlFor={htmlFor}>{name}</Label>
-        <Input type={type} placeholder={placeholder} />
+        <Input type={type} placeholder={placeholder} name={name} />
       </div>
     </>
   );

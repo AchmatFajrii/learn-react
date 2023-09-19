@@ -3,7 +3,7 @@ import Button from "../Elements/Button";
 const CardProduct = ({ children }) => {
   return (
     <>
-      <div className="w-full max-w-xs p-4 rounded-lg bg-blue-600">
+      <div className="w-full max-w-xs p-4 rounded-lg bg-blue-600 shadow-lg transition-all ease-in-out duration-300 hover:-translate-y-4">
         {children}
       </div>
     </>
